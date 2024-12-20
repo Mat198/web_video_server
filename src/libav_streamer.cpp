@@ -274,8 +274,6 @@ void LibavStreamer::sendImage(
   }
 
   if (got_packet) {
-    std::size_t size;
-    uint8_t * output_buf;
 
     double seconds = std::chrono::duration_cast<std::chrono::duration<double>>(
       time - first_image_time_).count();
