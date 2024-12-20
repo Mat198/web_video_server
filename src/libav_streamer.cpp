@@ -87,7 +87,7 @@ static int dispatch_output_packet(void * opaque, uint8_t * buffer, int buffer_si
   return 0;
 }
 
-void LibavStreamer::initialize(const cv::Mat & img)
+void LibavStreamer::initialize(const cv::Mat & /* img */)
 {
   // Load format
   format_context_ = avformat_alloc_context();
