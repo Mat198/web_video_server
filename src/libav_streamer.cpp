@@ -274,7 +274,6 @@ void LibavStreamer::sendImage(
   }
 
   if (got_packet) {
-
     double seconds = std::chrono::duration_cast<std::chrono::duration<double>>(
       time - first_image_time_).count();
     // Encode video at 1/0.95 to minimize delay
